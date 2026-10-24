@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 44" width="640" height="44">
+  <style>
+    .squig { stroke-dasharray: 860; stroke-dashoffset: 860; animation: draw 4s linear infinite; }
+    @keyframes draw {
+      0%   { stroke-dashoffset: 860; }
+      55%  { stroke-dashoffset: 0; }
+      85%  { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 860; }
+    }
+    .star { animation: twinkle 2.3s ease-in-out infinite; }
+    .star2 { animation: twinkle 2.3s ease-in-out 1.1s infinite; }
+    .star3 { animation: twinkle 2.3s ease-in-out 0.5s infinite; }
+    @keyframes twinkle { 0%, 100% { opacity: 0.15; } 50% { opacity: 1; } }
+  </style>
+  <path class="squig" fill="none" stroke="#58A6FF" stroke-width="3.5" stroke-linecap="round"
+    d="M14 22 C 40 6, 62 6, 84 22 S 128 38, 150 22 S 194 6, 216 22 S 260 38, 282 22 S 326 6, 348 22 S 392 38, 414 22 S 458 6, 480 22 S 524 38, 546 22 S 590 6, 612 22"/>
+  <g fill="none" stroke="#8A63D2" stroke-width="3" stroke-linecap="round">
+    <path class="star" d="M300 12 L302 18 L308 20 L302 22 L300 28 L298 22 L292 20 L298 18 Z"/>
+    <path class="star2" d="M330 8 L331.6 12.4 L336 14 L331.6 15.6 L330 20 L328.4 15.6 L324 14 L328.4 12.4 Z"/>
+    <path class="star3" d="M276 8 L277.6 12.4 L282 14 L277.6 15.6 L276 20 L274.4 15.6 L272 14 L274.4 12.4 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 190" width="200" height="190">
+  <style>
+    .wiggle { animation: tilt 3s ease-in-out infinite alternate; transform-origin: 100px 100px; }
+    @keyframes tilt { from { transform: rotate(-2.2deg); } to { transform: rotate(2.2deg); } }
+    .eye { animation: blink 4.2s ease-in-out infinite; transform-origin: center; }
+    .eye2 { animation: blink 4.2s ease-in-out .12s infinite; transform-origin: center; }
+    @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 94%, 97% { transform: scaleY(0.08); } }
+    .bub { animation: pop 4.5s ease-in-out infinite; }
+    @keyframes pop { 0%, 30% { opacity: 0; } 40%, 75% { opacity: 1; } 85%, 100% { opacity: 0; } }
+    .tent { animation: sway 2.6s ease-in-out infinite alternate; transform-origin: 100px 130px; }
+    @keyframes sway { from { transform: rotate(-1.4deg); } to { transform: rotate(1.4deg); } }
+  </style>
+  <g class="wiggle" fill="none" stroke="#58A6FF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- speech bubble -->
+    <g class="bub" stroke="#8A63D2">
+      <path d="M116 18 C134 12 152 16 156 26 C160 38 148 44 134 43 C120 42 112 40 110 34"/>
+      <path d="M114 36 L108 46 L120 42"/>
+      <text x="125" y="33" font-family="cursive" font-size="12" fill="#8A63D2" stroke="none">hi!</text>
+    </g>
+    <!-- head: wobbly hand-drawn circle -->
+    <path d="M100 52 C130 48 156 62 160 88 C164 112 152 134 128 142 C106 149 82 146 68 132 C54 118 52 96 60 78 C68 60 82 54 100 52 Z"/>
+    <!-- ears -->
+    <path d="M74 62 L64 44 L84 52"/>
+    <path d="M126 62 L138 44 L146 64"/>
+    <!-- body blob -->
+    <path d="M84 142 C78 158 74 168 70 176 C88 168 96 166 100 166 C104 166 114 168 132 176 C128 166 124 156 118 144"/>
+    <!-- tentacles -->
+    <g class="tent">
+      <path d="M70 176 C62 184 58 186 52 184"/>
+      <path d="M90 168 C86 180 84 184 80 188"/>
+      <path d="M112 168 C114 180 116 184 120 188"/>
+      <path d="M132 176 C140 184 144 186 150 184"/>
+    </g>
+    <!-- eyes -->
+    <g class="eye"><circle cx="82" cy="94" r="9"/><circle cx="84.5" cy="96.5" r="2.6" fill="#58A6FF" stroke="none"/></g>
+    <g class="eye2"><circle cx="122" cy="94" r="9"/><circle cx="124.5" cy="96.5" r="2.6" fill="#58A6FF" stroke="none"/></g>
+    <!-- smile -->
+    <path d="M84 116 C94 128 112 128 120 116"/>
+    <!-- blush freckles -->
+    <path d="M70 108 L74 107 M72 112 L76 111" stroke="#F7b267"/>
+    <path d="M128 108 L132 107 M127 112 L131 111" stroke="#F7b267"/>
+  </g>
+</svg>
